@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <view-blog></view-blog>
+    <upload-blog></upload-blog>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 
+import ViewBlog from './components/ViewBlog.vue';
+import UploadBlog from './components/UploadBlog.vue'
 export default {
   name: "App",
-  components: {
-    HelloWorld
+  components: 
+    ViewBlog,
+    UploadBlog 
   }
-};
+
 </script>
 
 <style>
