@@ -5,8 +5,8 @@
  <div class="blog-container" v-for="blogger in bloggers" :key="blogger[1]">
    <h2>{{ blogger[0] }}</h2>
    <p>{{ blogger[2] }}</p>
-  <delete-blog :blogid="blogger[2]"></delete-blog>
-  <update-blog :blogid="blogger[2]"></update-blog>
+  <delete-blog :bloggerid="blogger[2]"></delete-blog>
+  <update-blog :bloggerid="blogger[2]"></update-blog>
    
   </div>
   </div>
@@ -17,6 +17,7 @@ import axios from 'axios';
 import UpdateBlog from "./UpdateBlog.vue";
 import DeleteBlog from "./DeleteBlog.vue"
 export default {
+  name:"ViewBlog",
   data() {
     return{
       bloggers: [],

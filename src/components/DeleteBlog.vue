@@ -10,7 +10,7 @@ export default {
   name: "DeleteBlog",
 
   props: {
-    carid: {
+    boggerId: {
       type: Number,
       required: true,
     },
