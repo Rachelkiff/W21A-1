@@ -21,7 +21,7 @@ export default {
     };
   },
   props: {
-    bloggerId: {
+    bloggerid: {
       type: Number,
       required: true,
     },

@@ -11,7 +11,6 @@ import ViewBlog from './components/ViewBlog.vue';
 import UploadBlog from './components/UploadBlog.vue'
 export default {
   name: "App",
-      
   components: 
     ViewBlog,
     UploadBlog 

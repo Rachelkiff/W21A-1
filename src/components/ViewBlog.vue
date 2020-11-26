@@ -17,13 +17,12 @@ import axios from 'axios';
 import UpdateBlog from "./UpdateBlog.vue";
 import DeleteBlog from "./DeleteBlog.vue"
 export default {
-  name:"ViewBlog",
   data() {
     return{
       bloggers: [],
     };
   },
-  components: {
+  components:{
     UpdateBlog,
     DeleteBlog
   },

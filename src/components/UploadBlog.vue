@@ -31,9 +31,9 @@ import axios from "axios"
                         "Content-Type": "application/json"
                     },
                     data: {
-                        bloggerUsername: this.bloggerUsername,
-                        bloggerContent: this.bloggerContent,
-                        bloggerCreatedat: this.bloggerCreatedat
+                        username: this.bloggerUsername,
+                        content: this.bloggerContent,
+                        createdat: this.bloggerCreatedat
                     }
                 }).then((response)=>{
                     console.log(response)
