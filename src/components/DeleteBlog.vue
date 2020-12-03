@@ -19,7 +19,7 @@ export default {
     deleteBlog: function () {
       axios
         .request({
-          url: "https://blogpsts.ml/api/bloggers",
+          url: "http://127.0.0.1:5000/api/bloggers",
           method: "Delete",
           headers: {
             "Content-Type": "application/json",

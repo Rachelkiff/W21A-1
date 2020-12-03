@@ -29,7 +29,7 @@ export default {
     methods: {
       getBlogpost: function(){
         axios.request ({
-          url: "https://blogpsts.ml/api/bloggers",
+          url: "http:/127.0.0.1:5000/api/bloggers",
           method: "GET"
         })
         .then((response)=> {

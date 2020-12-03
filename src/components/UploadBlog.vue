@@ -2,11 +2,12 @@
     <div>
      <p>User Name</p>
      <input v-model="bloggerUsername" type="text">
-     <p>Enter yur blog post</p> 
+     <p>Enter your blog post</p> 
      <textarea v-model="bloggerContent"></textarea>
-     <p>New blog post created</p>
-     <input v-model="bloggerCreatedat" type="text">
+     <p>New blog post</p>
      <button @click="uploadBlog">Submit</button>
+     <p>Created at</p>
+     <input type="date" v-model="createdAt">
 
     </div>
 </template>
@@ -14,18 +15,19 @@
 <script>
 import axios from "axios"
     export default {
-        name: "UploadBlog",
+        
         data() {
             return {
                 bloggerUsername: "",
                 bloggerContent: "",
-                bloggerCreatedat :"",
+                createdAt: ""
+                
             }
         },
         methods: {
            uploadBlog: function() {
                 axios.request({
-                    url: "https://blogpsts.ml/api/bloggers",
+                    url: "http://127.0.0.1:5000/api/bloggers",
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
@@ -33,7 +35,7 @@ import axios from "axios"
                     data: {
                         username: this.bloggerUsername,
                         content: this.bloggerContent,
-                        createdat: this.bloggerCreatedat
+                        createdAt: this.createdAt
                     }
                 }).then((response)=>{
                     console.log(response)

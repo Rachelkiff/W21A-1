@@ -30,7 +30,7 @@ export default {
     updateBlog: function () {
       axios
         .request({
-          url: "https://blogpsts.ml/api/bloggers",
+          url: "http://127.0.0.1:5000/api/bloggers",
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
